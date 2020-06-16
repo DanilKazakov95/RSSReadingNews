@@ -9,5 +9,7 @@
 import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
+    
     @IBOutlet var categoryLabel: UILabel!
+    
 }

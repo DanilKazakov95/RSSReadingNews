@@ -44,8 +44,6 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         newsTableView.rowHeight = UITableView.automaticDimension
         newsTableView.refreshControl = refreshControl
         fetchData()
-        
-        newsTableView.reloadData()
     }
     
     //MARK: Get Data
@@ -72,7 +70,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
   
     //MARK: NavigationBar Button Action
     @IBAction func openCategoryList(_ sender: UIBarButtonItem) {
-        let popVC = self.storyboard?.instantiateViewController(identifier: "ChooseCategoryTableViewController") as! ChooseCategoryTableViewController
+        let popVC = self.storyboard?.instantiateViewController(identifier: "SelectingCategoryTableViewController") as! SelectingCategoryTableViewController
         popVC.categoryList = categoryArray
         self.navigationController?.pushViewController(popVC, animated: true)
     }
@@ -80,6 +78,8 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func resetNews(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "selectedCategory")
         filterTableView()
+        fetchData()
+        newsTableView.reloadData()
     }
     
     //MARK: News Filter
@@ -122,7 +122,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let newsRow = rssItems![indexPath.row]
-        let nextVC = self.storyboard?.instantiateViewController(identifier: "SelectedNewsViewController") as! SelectedNewsViewController
+        let nextVC = self.storyboard?.instantiateViewController(identifier: "DetailedNewsViewController") as! DetailedNewsViewController
         nextVC.selectedRSSItems = newsRow
         self.navigationController?.pushViewController(nextVC, animated: true)
     }

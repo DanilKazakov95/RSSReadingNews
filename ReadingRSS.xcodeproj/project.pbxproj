@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACBA4F2F2495FE98004F5B5C /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA4F2E2495FE98004F5B5C /* CategoryTableViewCell.swift */; };
-		ACBA4F312495FFAD004F5B5C /* ChooseCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA4F302495FFAD004F5B5C /* ChooseCategoryTableViewController.swift */; };
+		ACBA4F312495FFAD004F5B5C /* SelectingCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA4F302495FFAD004F5B5C /* SelectingCategoryTableViewController.swift */; };
 		ACE8A4C324937653003BFF3C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE8A4C224937653003BFF3C /* Extensions.swift */; };
 		ACF370F32493024E0094221A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF370F22493024E0094221A /* AppDelegate.swift */; };
 		ACF370F52493024E0094221A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF370F42493024E0094221A /* SceneDelegate.swift */; };
@@ -16,7 +16,7 @@
 		ACF370FC249302510094221A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF370FB249302510094221A /* Assets.xcassets */; };
 		ACF370FF249302510094221A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF370FD249302510094221A /* LaunchScreen.storyboard */; };
 		ACF37107249302E20094221A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF37106249302E20094221A /* NewsViewController.swift */; };
-		ACF37109249302F90094221A /* SelectedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF37108249302F90094221A /* SelectedNewsViewController.swift */; };
+		ACF37109249302F90094221A /* DetailedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF37108249302F90094221A /* DetailedNewsViewController.swift */; };
 		ACF3710B2493033D0094221A /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3710A2493033D0094221A /* NewsTableViewCell.swift */; };
 		ACF3710D2493034D0094221A /* SelectedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3710C2493034D0094221A /* SelectedTableViewCell.swift */; };
 		ACF3710F2493035D0094221A /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF3710E2493035D0094221A /* NewsModel.swift */; };
@@ -25,7 +25,7 @@
 
 /* Begin PBXFileReference section */
 		ACBA4F2E2495FE98004F5B5C /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		ACBA4F302495FFAD004F5B5C /* ChooseCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoryTableViewController.swift; sourceTree = "<group>"; };
+		ACBA4F302495FFAD004F5B5C /* SelectingCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingCategoryTableViewController.swift; sourceTree = "<group>"; };
 		ACE8A4C224937653003BFF3C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ACF370EF2493024E0094221A /* ReadingRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadingRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF370F22493024E0094221A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		ACF370FE249302510094221A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACF37100249302510094221A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF37106249302E20094221A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		ACF37108249302F90094221A /* SelectedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedNewsViewController.swift; sourceTree = "<group>"; };
+		ACF37108249302F90094221A /* DetailedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedNewsViewController.swift; sourceTree = "<group>"; };
 		ACF3710A2493033D0094221A /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		ACF3710C2493034D0094221A /* SelectedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedTableViewCell.swift; sourceTree = "<group>"; };
 		ACF3710E2493035D0094221A /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
@@ -98,9 +98,9 @@
 		ACF37112249303720094221A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				ACBA4F302495FFAD004F5B5C /* ChooseCategoryTableViewController.swift */,
+				ACBA4F302495FFAD004F5B5C /* SelectingCategoryTableViewController.swift */,
 				ACF37106249302E20094221A /* NewsViewController.swift */,
-				ACF37108249302F90094221A /* SelectedNewsViewController.swift */,
+				ACF37108249302F90094221A /* DetailedNewsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -195,13 +195,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF3710F2493035D0094221A /* NewsModel.swift in Sources */,
-				ACF37109249302F90094221A /* SelectedNewsViewController.swift in Sources */,
+				ACF37109249302F90094221A /* DetailedNewsViewController.swift in Sources */,
 				ACF37107249302E20094221A /* NewsViewController.swift in Sources */,
 				ACF3710B2493033D0094221A /* NewsTableViewCell.swift in Sources */,
 				ACF371112493036D0094221A /* FeedParser.swift in Sources */,
 				ACBA4F2F2495FE98004F5B5C /* CategoryTableViewCell.swift in Sources */,
 				ACF370F32493024E0094221A /* AppDelegate.swift in Sources */,
-				ACBA4F312495FFAD004F5B5C /* ChooseCategoryTableViewController.swift in Sources */,
+				ACBA4F312495FFAD004F5B5C /* SelectingCategoryTableViewController.swift in Sources */,
 				ACF3710D2493034D0094221A /* SelectedTableViewCell.swift in Sources */,
 				ACE8A4C324937653003BFF3C /* Extensions.swift in Sources */,
 				ACF370F52493024E0094221A /* SceneDelegate.swift in Sources */,

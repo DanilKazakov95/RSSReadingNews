@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectedNewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DetailedNewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var selectedNewsTableView: UITableView!
     var selectedRSSItems: News?
@@ -17,6 +17,7 @@ class SelectedNewsViewController: UIViewController, UITableViewDelegate, UITable
         super.viewDidLoad()
         setupTableView()
     }
+    
     //MARK: TableView Setup
     private func setupTableView() {
         selectedNewsTableView.delegate = self
@@ -38,5 +39,4 @@ class SelectedNewsViewController: UIViewController, UITableViewDelegate, UITable
         }
         return cell
     }
-    
 }

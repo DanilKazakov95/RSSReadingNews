@@ -9,6 +9,7 @@
 import UIKit
 
 class NewsTableViewCell: UITableViewCell {
+    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var pubDate: UILabel!
     

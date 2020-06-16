@@ -21,5 +21,4 @@ class SelectedTableViewCell: UITableViewCell {
             selectedFullText.text = item.yandexFullText
         }
     }
-    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChooseCategoryTableViewController: UITableViewController {
+class SelectingCategoryTableViewController: UITableViewController {
     
     var categoryList: [String] = []
 
@@ -23,7 +23,7 @@ class ChooseCategoryTableViewController: UITableViewController {
                tableView.rowHeight = UITableView.automaticDimension
     }
 
-    // MARK: - Table view data source
+    //MARK: Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

@@ -14,21 +14,25 @@ class FeedParser: NSObject, XMLParserDelegate {
     
     private var rssItems: [News] = []
     private var currentElement = ""
+    
     private var currentTitle = "" {
         didSet {
             currentTitle = currentTitle.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         }
     }
+    
     private var currentPubDate = "" {
         didSet {
             currentPubDate = currentPubDate.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         }
     }
+    
     private var currentCategory = "" {
         didSet {
             currentCategory = currentCategory.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         }
     }
+    
     private var currentYandexFullText = "" {
         didSet {
             currentYandexFullText = currentYandexFullText.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
@@ -55,7 +59,6 @@ class FeedParser: NSObject, XMLParserDelegate {
             let parser = XMLParser(data: data)
             parser.delegate = self
             parser.parse()
-           
         }
         task.resume()
     }
